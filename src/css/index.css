@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Colors */
+  --black: #282623;
+  --warm-black-1: #201e1c;
+  --warm-black-2: #282623;
+  --grey: #bababa;
+  --hard-grey-1: #757575;
+  --hard-grey-2: #808080;
+  --white: #fff;
+  --off-white: #faf8f7;
+  --green: #86efac;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -24,28 +24,36 @@
       rel="stylesheet"
       href="./src/css/burger-menu-icon.css"
     />
+    <link
+      rel="stylesheet"
+      href="./src/css/mobile-menu.css"
+    />
   </head>
 
   <body>
     <header
-      class="w-full fixed flex flex-row justify-between items-center space-x-4 p-2 sm:p-3 md:p-4 bg-white border-gray-200 border-solid border-b-2 shadow-md"
+      class="w-full h-20 fixed flex flex-row justify-between items-center p-3 sm:p-3 md:p-4 bg-white border-gray-200 border-solid border-b-2 shadow-md"
     >
       <div class="flex flex-row justify-between items-center space-x-3">
+        <!-- Logo -->
         <img
           src="./src/assets/images/logo.png"
           alt="logo"
-          class="w-20 sm:w-24 md:w-28 lg:w-32"
+          class="w-24"
         />
+
+        <!-- Company name -->
         <h1
-          class="text-base sm:text-xl md:text-2xl lg:text-3xl text-left font-semibold"
+          class="text-lg mobile-large:text-xl sm:text-2xl text-left font-semibold"
         >
           Auto Code Solution
         </h1>
       </div>
 
-      <div class="flex flex-row justify-between items-center space-x-2">
+      <div class="flex flex-row justify-between items-center space-x-3 ml-3">
+        <!-- Language icon -->
         <svg
-          class="w-6 sm:w-7 md:w-9"
+          class="w-8"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -59,21 +67,7 @@
           />
         </svg>
 
-        <!-- <svg
-          class="sm:hidden w-8"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg> -->
-
+        <!-- Menu burger icon -->
         <input
           type="checkbox"
           id="checkbox"
@@ -96,11 +90,33 @@
           ></div>
         </label>
       </div>
+
+      <!-- Mobile menu -->
+      <div class="card fixed top-[86px] right-[6px] shadow-xl">
+        <ul class="list">
+          <li class="element">
+            <p class="label">About</p>
+          </li>
+
+          <li class="element">
+            <p class="label">Services</p>
+          </li>
+
+          <li class="element delete">
+            <p class="label">Contact me</p>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="h-screen bg-green-300">
+      <!-- About -->
       <section></section>
+
+      <!-- Services -->
       <section></section>
+
+      <!-- Contact me -->
       <section></section>
     </main>
 

@@ -1,5 +1,4 @@
-.card {
-  width: 180px;
+.mobile-menu {
   background-color: var(--white);
   background-image: linear-gradient(
     139deg,
@@ -15,11 +14,7 @@
   gap: 10px;
 }
 
-/* .card .separator {
-  border-top: 1.5px solid #42434a;
-} */
-
-.card .list {
+.mobile-menu__list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -27,10 +22,10 @@
   padding: 0px 10px;
 }
 
-.card .list .element {
+.mobile-menu__element {
   display: flex;
   align-items: center;
-  color: var(--hard-grey-2);
+  color: var(--warm-black-2);
   gap: 10px;
   transition: all 0.3s ease-out;
   padding: 4px 7px;
@@ -38,38 +33,86 @@
   cursor: pointer;
 }
 
-.card .list .element svg {
-  width: 19px;
-  height: 19px;
-  stroke: var(--hard-grey-2);
-  transition: all 0.3s ease-out;
-}
-
-.card .list .element .label {
-  font-weight: 600;
-}
-
-.card .list .element:hover {
+.mobile-menu__element:hover {
   background-color: var(--green);
-  color: var(--black);
+  color: var(--white);
   transform: translate(1px, -1px);
 }
 
-.card .list .element:active {
+.mobile-menu__element:active {
   transform: scale(0.99);
 }
 
-.card .list .element:hover svg {
-  stroke: var(--black);
+.mobile-menu__label {
+  font-weight: 600;
 }
 
-/* .card .list:last-child svg {
-  stroke: #bd89ff;
+:root {
+  --animate-duration: 0.75s;
+  --animate-delay: 0.75s;
+  --animate-repeat: 1;
 }
-.card .list:last-child .element {
-  color: #bd89ff;
-} */
+.animate__animated {
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
-/* .card .list:last-child .element:hover {
-  background-color: rgba(0, 0, 0, 0.85);
-} */
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+.animate__fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}

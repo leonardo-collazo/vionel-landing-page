@@ -11,10 +11,12 @@
   --hard-grey-1: #757575;
   --hard-grey-2: #808080;
   --white: #fff;
-  --off-white: #faf8f7;
-  --green: #86efac;
+  --hard-white-1: #faf8f7;
+  --hard-white-2: #f2f2f2;
+  --green: #22c55e;
 }
 
+/* Global */
 * {
   margin: 0;
   padding: 0;

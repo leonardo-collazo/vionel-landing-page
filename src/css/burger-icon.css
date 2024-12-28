@@ -1,8 +1,8 @@
-#checkbox {
+.burger-icon {
   display: none;
 }
 
-.toggle {
+.burger-icon__toggle {
   position: relative;
   width: 24px;
   cursor: pointer;
@@ -13,7 +13,7 @@
   gap: 6px;
 }
 
-.bars {
+.burger-icon__bar {
   width: 100%;
   height: 4px;
   background-color: rgb(76, 189, 151);
@@ -21,23 +21,23 @@
   transition-duration: 0.3s;
 }
 
-#checkbox:checked + .toggle .bars {
+.burger-icon:checked + .burger-icon__toggle .burger-icon__bar {
   margin-left: 8px;
-  width: 107%;
+  width: 108%;
 }
 
-#checkbox:checked + .toggle #bar2 {
-  visibility: hidden;
-  transition-duration: 0ms;
-}
-
-#checkbox:checked + .toggle #bar1 {
+.burger-icon:checked + .burger-icon__toggle .burger-icon__bar1 {
   transform: rotate(50deg);
   transition-duration: 0.3s;
   transform-origin: left center;
 }
 
-#checkbox:checked + .toggle #bar3 {
+.burger-icon:checked + .burger-icon__toggle .burger-icon__bar2 {
+  visibility: hidden;
+  transition-duration: 0ms;
+}
+
+.burger-icon:checked + .burger-icon__toggle .burger-icon__bar3 {
   transform: rotate(-50deg);
   transition-duration: 0.3s;
   transform-origin: left center;

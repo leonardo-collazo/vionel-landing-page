@@ -1,4 +1,5 @@
 .mobile-menu {
+  visibility: hidden;
   background-color: var(--white);
   background-image: linear-gradient(
     139deg,

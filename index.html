@@ -29,8 +29,8 @@
       href="./src/css/mobile-menu.css"
     />
     <script
-      src="./src/js/mobile-menu.js"
-      defer
+      type="module"
+      src="./src/js/header-manager.js"
     ></script>
   </head>
 
@@ -106,20 +106,22 @@
         </svg>
 
         <!-- Burger Icon -->
-        <div class="lg:hidden">
-          <input
-            type="checkbox"
-            id="burger-icon"
-            class="burger-icon"
-          />
-          <label
-            for="burger-icon"
-            class="burger-icon__toggle"
-          >
-            <div class="burger-icon__bar burger-icon__bar1"></div>
-            <div class="burger-icon__bar burger-icon__bar2"></div>
-            <div class="burger-icon__bar burger-icon__bar3"></div>
-          </label>
+        <div
+          id="burger-icon"
+          class="burger-icon__toggle lg:hidden"
+        >
+          <div
+            id="burger-icon__bar1"
+            class="burger-icon__bar"
+          ></div>
+          <div
+            id="burger-icon__bar2"
+            class="burger-icon__bar"
+          ></div>
+          <div
+            id="burger-icon__bar3"
+            class="burger-icon__bar"
+          ></div>
         </div>
       </div>
 
@@ -141,7 +143,7 @@
             </li>
           </a>
 
-          <a href="#about-me">
+          <a href="#contact-me">
             <li class="mobile-menu__element">
               <p class="mobile-menu__label">Contact me</p>
             </li>

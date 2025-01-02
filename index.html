@@ -30,7 +30,11 @@
     />
     <script
       type="module"
-      src="./src/js/header-manager.js"
+      src="./src/js/header/header-manager.js"
+    ></script>
+    <script
+      type="module"
+      src="./src/js/language/language-switch.js"
     ></script>
   </head>
 
@@ -59,39 +63,53 @@
       </a>
 
       <!-- Header Right Section -->
-      <div class="flex flex-row justify-between items-center gap-3 ml-6">
+      <div class="flex flex-row justify-between items-center gap-3 lg:gap-4">
         <!-- Tabs -->
-        <ul
-          class="hidden lg:flex flex-row justify-center items-center gap-3 m-4"
-        >
+        <div class="hidden lg:flex flex-row justify-center items-center gap-3">
           <a href="#about">
-            <li
+            <div
               class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
             >
-              <p class="text-lg">About</p>
-            </li>
+              <p
+                i18n="about-tab"
+                class="text-lg"
+              >
+                About
+              </p>
+            </div>
           </a>
 
           <a href="#services">
-            <li
+            <div
               class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
             >
-              <p class="text-lg">Services</p>
-            </li>
+              <p
+                i18n="services-tab"
+                class="text-lg"
+              >
+                Services
+              </p>
+            </div>
           </a>
 
           <a href="#contact-me">
-            <li
+            <div
               class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
             >
-              <p class="text-lg">Contact me</p>
-            </li>
+              <p
+                i18n="contact-me-tab"
+                class="text-lg"
+              >
+                Contact me
+              </p>
+            </div>
           </a>
-        </ul>
+        </div>
 
         <!-- Language Icon -->
         <svg
-          class="w-7 mobile-large:w-8"
+          id="language-icon"
+          class="w-8 cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -108,7 +126,7 @@
         <!-- Burger Icon -->
         <div
           id="burger-icon"
-          class="burger-icon__toggle lg:hidden"
+          class="burger-icon__toggle"
         >
           <div
             id="burger-icon__bar1"
@@ -130,25 +148,40 @@
         id="mobile-menu"
         class="mobile-menu w-[180px] mobile-large:w-[200px] sm:w-[220px] fixed top-[86px] right-[6px] shadow-xl animate__animated"
       >
-        <ul class="mobile-menu__list">
+        <div class="mobile-menu__list">
           <a href="#about">
-            <li class="mobile-menu__element">
-              <p class="mobile-menu__label">About</p>
-            </li>
+            <div class="mobile-menu__element">
+              <p
+                i18n="about-option"
+                class="mobile-menu__label"
+              >
+                About
+              </p>
+            </div>
           </a>
 
           <a href="#services">
-            <li class="mobile-menu__element">
-              <p class="mobile-menu__label">Services</p>
-            </li>
+            <div class="mobile-menu__element">
+              <p
+                i18n="services-option"
+                class="mobile-menu__label"
+              >
+                Services
+              </p>
+            </div>
           </a>
 
           <a href="#contact-me">
-            <li class="mobile-menu__element">
-              <p class="mobile-menu__label">Contact me</p>
-            </li>
+            <div class="mobile-menu__element">
+              <p
+                i18n="contact-me-option"
+                class="mobile-menu__label"
+              >
+                Contact me
+              </p>
+            </div>
           </a>
-        </ul>
+        </div>
       </div>
     </header>
 

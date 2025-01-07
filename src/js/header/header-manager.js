@@ -5,18 +5,7 @@ const burgerIcon = document.getElementById("burger-icon");
 const mobileMenuOptions = Array.from(
   document.getElementsByClassName("mobile-menu__element")
 );
-
 let toggle = false;
-
-function setMobileMenuOptions() {
-  mobileMenuOptions.forEach(option => {
-    option.addEventListener("click", () => {
-      turnIconToBurger();
-      hideMobileMenu();
-      toggle = false;
-    });
-  });
-}
 
 function manage() {
   if (!toggle) {
@@ -30,10 +19,15 @@ function manage() {
   }
 }
 
-function start() {
-  setMobileMenuOptions();
+function setMobileMenuOptions() {
+  mobileMenuOptions.forEach(option => {
+    option.addEventListener("click", () => {
+      turnIconToBurger();
+      hideMobileMenu();
+      toggle = false;
+    });
+  });
 }
 
 burgerIcon.addEventListener("click", manage);
-
-start();
+setMobileMenuOptions();

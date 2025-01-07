@@ -1,6 +1,7 @@
 .burger-icon__toggle {
   position: relative;
   width: 24px;
+  min-width: 24px;
   cursor: pointer;
   display: flex;
   flex-direction: column;

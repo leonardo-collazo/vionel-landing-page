@@ -37,4 +37,9 @@ const i18n = {
   },
 };
 
-export { languageKey, languages, i18n };
+const languageIconSources = {
+  esp: "./src/assets/icons/spain-flag.png",
+  eng: "./src/assets/icons/usa-flag.png",
+};
+
+export { languageKey, languages, i18n, languageIconSources };

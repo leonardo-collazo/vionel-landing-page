@@ -1,17 +1,25 @@
-ul {
-  list-style: none;
-}
-
-.example-2 {
+.social-media-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
-.example-2 .icon-content {
+.social-media-list__element {
   margin: 0 10px;
   position: relative;
 }
-.example-2 .icon-content .tooltip {
+.social-media-list__element--whatsapp {
+  display: inline-block;
+  position: fixed;
+  bottom: 110px;
+  right: 16px;
+  margin: 0;
+  border-width: 4px;
+  border-radius: 50%;
+  border-color: #128c7e;
+  box-shadow: 0 0 15px 6px #128c7e;
+}
+.social-media-tooltip {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -24,12 +32,12 @@ ul {
   font-size: 14px;
   transition: all 0.3s ease;
 }
-.example-2 .icon-content:hover .tooltip {
+.social-media-list__element:hover .social-media-tooltip {
   opacity: 1;
   visibility: visible;
   top: -50px;
 }
-.example-2 .icon-content a {
+.social-media-link {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -42,19 +50,17 @@ ul {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.example-2 .icon-content a:hover {
+.social-media-link:hover {
+  color: white;
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
-.example-2 .icon-content a svg {
+.social-media {
   position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
-.example-2 .icon-content a:hover {
-  color: white;
-}
-.example-2 .icon-content a .filled {
+.social-media-filled {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -64,21 +70,22 @@ ul {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
-.example-2 .icon-content a:hover .filled {
+.social-media-link:hover .social-media-filled {
   height: 100%;
 }
 
-.example-2 .icon-content a[data-social="whatsapp"] .filled,
-.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+.social-media-link[data-social="whatsapp"] .social-media-filled,
+.social-media-link[data-social="whatsapp"] ~ .social-media-tooltip {
   background-color: #128c7e;
 }
 
-.example-2 .icon-content a[data-social="facebook"] .filled,
-.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+.social-media-link[data-social="facebook"] .social-media-filled,
+.social-media-link[data-social="facebook"] ~ .social-media-tooltip {
   background-color: #3b5998;
 }
-.example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+
+.social-media-link[data-social="instagram"] .social-media-filled,
+.social-media-link[data-social="instagram"] ~ .social-media-tooltip {
   background: linear-gradient(
     45deg,
     #405de6,
@@ -89,7 +96,7 @@ ul {
     #fd1f1f
   );
 }
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+.social-media-link[data-social="youtube"] .social-media-filled,
+.social-media-link[data-social="youtube"] ~ .social-media-tooltip {
   background-color: #ff0000;
 }

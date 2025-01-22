@@ -61,7 +61,7 @@
 
   <body>
     <header
-      class="w-full h-20 fixed top-0 flex flex-row justify-between items-center gap-3 p-3 sm:p-3 md:p-4 bg-white border-gray-200 border-solid border-b-2 shadow-md"
+      class="w-full h-20 fixed top-0 flex flex-row justify-between items-center gap-3 p-3 sm:p-3 md:p-4 bg-white border-gray-200 border-solid border-b-2 shadow-md z-10"
     >
       <!-- Header Left Section -->
       <a
@@ -201,21 +201,19 @@
       <!-- Hero Section -->
       <section
         id="hero"
-        class="h-screen border-2 border-solid bg-hero-background-small-vertical md:bg-hero-background-medium-horizontal lg:bg-hero-background-large-horizontal bg-cover bg-no-repeat"
+        class="h-screen bg-hero-background-small-vertical md:bg-hero-background-medium-horizontal lg:bg-hero-background-large-horizontal bg-cover bg-no-repeat"
       >
-        <div class="mt-20">
-          <div class="flex flex-col gap-6 px-5 pt-7">
-            <h1 class="break-words text-5xl font-bold text-white">
-              Car Diagnostic
-            </h1>
-            <p class="text-white text-lg leading-6">
-              After our diagnostic, your problems will gone
-            </p>
-            <div
-              class="flex justify-center items-center w-36 h-14 rounded-sm bg-[#22c55e] cursor-pointer hover:brightness-75 transition-all duration-300"
-            >
-              <a href="#services"><p class="text-xl text-white">Services</p></a>
-            </div>
+        <div class="absolute top-20 flex flex-col gap-6 px-5 pt-7">
+          <h1 class="break-words text-5xl font-bold text-white">
+            Car Diagnostic
+          </h1>
+          <p class="text-lg leading-6 text-white">
+            After our diagnostic, your problems will gone
+          </p>
+          <div
+            class="flex justify-center items-center w-36 h-14 rounded-sm bg-[#22c55e] cursor-pointer hover:brightness-75 transition-all duration-300"
+          >
+            <a href="#services"><p class="text-xl text-white">Services</p></a>
           </div>
         </div>
       </section>
@@ -223,9 +221,16 @@
       <!-- About Section -->
       <section
         id="about"
-        class="h-screen border-2 border-solid"
+        class="flex flex-col gap-6 border-2 border-solid px-5 pt-7 scroll-mt-20"
       >
-        About
+        <h1 class="text-4xl font-bold text-white">About</h1>
+        <pre class="text-lg leading-6 text-wrap text-white">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos incidunt non maiores nulla? Tempore dolorem unde maxime atque sed, aspernatur saepe, nulla, quasi itaque necessitatibus nobis in dolorum.
+          
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos incidunt non maiores nulla? Tempore dolorem unde maxime atque sed, aspernatur saepe, nulla, quasi itaque necessitatibus nobis in dolorum.
+          
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos incidunt non maiores nulla? Tempore dolorem unde maxime atque sed, aspernatur saepe, nulla, quasi itaque necessitatibus nobis in dolorum.
+        </pre>
       </section>
 
       <!-- Services Section -->

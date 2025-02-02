@@ -735,7 +735,7 @@ video {
 }
 
 .bg-hero-background-small-vertical {
-  background-image: url('/src/assets/pictures/computer-hardware-small-vertical.jpg');
+  background-image: url('src/assets/pictures/computer-hardware-small-vertical.jpg');
 }
 
 .bg-cover {
@@ -1024,7 +1024,7 @@ video {
 
 @media (min-width: 768px) {
   .md\:bg-hero-background-medium-horizontal {
-    background-image: url('/src/assets/pictures/computer-hardware-medium-horizontal.jpg');
+    background-image: url('src/assets/pictures/computer-hardware-medium-horizontal.jpg');
   }
 
   .md\:p-4 {
@@ -1047,6 +1047,6 @@ video {
   }
 
   .lg\:bg-hero-background-large-horizontal {
-    background-image: url('/src/assets/pictures/computer-hardware-large-horizontal.jpg');
+    background-image: url('src/assets/pictures/computer-hardware-large-horizontal.jpg');
   }
 }

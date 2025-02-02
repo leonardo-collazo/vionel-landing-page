@@ -9,17 +9,17 @@ module.exports = {
       },
       backgroundImage: {
         "hero-background-large-vertical":
-          "url('./src/assets/pictures/computer-hardware-large-vertical.jpg')",
+          "url('/src/assets/pictures/computer-hardware-large-vertical.jpg')",
         "hero-background-medium-vertical":
-          "url('./src/assets/pictures/computer-hardware-medium-vertical.jpg')",
+          "url('/src/assets/pictures/computer-hardware-medium-vertical.jpg')",
         "hero-background-small-vertical":
-          "url('./src/assets/pictures/computer-hardware-small-vertical.jpg')",
+          "url('/src/assets/pictures/computer-hardware-small-vertical.jpg')",
         "hero-background-large-horizontal":
-          "url('./src/assets/pictures/computer-hardware-large-horizontal.jpg')",
+          "url('/src/assets/pictures/computer-hardware-large-horizontal.jpg')",
         "hero-background-medium-horizontal":
-          "url('./src/assets/pictures/computer-hardware-medium-horizontal.jpg')",
+          "url('/src/assets/pictures/computer-hardware-medium-horizontal.jpg')",
         "hero-background-small-horizontal":
-          "url('./src/assets/pictures/computer-hardware-small-horizontal.jpg')",
+          "url('/src/assets/pictures/computer-hardware-small-horizontal.jpg')",
       },
     },
   },

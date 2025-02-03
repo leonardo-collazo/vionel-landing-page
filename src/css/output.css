@@ -658,6 +658,14 @@ video {
   scroll-margin-top: 5rem;
 }
 
+.scroll-mt-48 {
+  scroll-margin-top: 12rem;
+}
+
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -696,10 +704,6 @@ video {
 
 .whitespace-pre-wrap {
   white-space: pre-wrap;
-}
-
-.break-words {
-  overflow-wrap: break-word;
 }
 
 .rounded-sm {

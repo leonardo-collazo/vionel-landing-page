@@ -11,7 +11,7 @@
 .social-media-list__element--whatsapp {
   display: inline-block;
   position: fixed;
-  bottom: 110px;
+  bottom: 125px;
   right: 16px;
   margin: 0;
   border-width: 4px;
@@ -35,7 +35,7 @@
 .social-media-list__element:hover .social-media-tooltip {
   opacity: 1;
   visibility: visible;
-  top: -50px;
+  top: -40px;
 }
 .social-media-link {
   position: relative;

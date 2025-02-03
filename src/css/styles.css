@@ -13,13 +13,12 @@
   --white: #fff;
   --hard-white-1: #faf8f7;
   --hard-white-2: #f2f2f2;
-  --green: #22c55e;
+  --green: #009637;
 
   /* Animations */
   --animate-duration: 0.5s;
   --animate-delay: 0.5s;
   --animate-repeat: 1;
-
   --language-icon-animate-duration: 0.25s;
 }
 

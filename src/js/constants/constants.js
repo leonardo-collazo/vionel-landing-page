@@ -22,18 +22,18 @@ const i18n = {
   esp: {
     "about-tab": "Acerca de",
     "services-tab": "Servicios",
-    "contact-me-tab": "Cont\u00e1ctame",
+    "contact-tab": "Contacto",
     "about-option": "Acerca de",
     "services-option": "Servicios",
-    "contact-me-option": "Cont\u00e1ctame",
+    "contact-option": "Contacto",
   },
   eng: {
     "about-tab": "About",
     "services-tab": "Services",
-    "contact-me-tab": "Contact me",
+    "contact-tab": "Contact",
     "about-option": "About",
     "services-option": "Services",
-    "contact-me-option": "Contact me",
+    "contact-option": "Contact",
   },
 };
 

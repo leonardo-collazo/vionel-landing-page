@@ -658,10 +658,6 @@ video {
   scroll-margin-top: 5rem;
 }
 
-.scroll-mt-48 {
-  scroll-margin-top: 12rem;
-}
-
 .scroll-mt-24 {
   scroll-margin-top: 6rem;
 }
@@ -700,6 +696,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .whitespace-pre-wrap {
@@ -802,6 +802,14 @@ video {
   padding-top: 1.75rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -826,6 +834,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -836,6 +849,10 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.text-\[var\(--green\)\] {
+  color: var(--green);
 }
 
 .text-white {
@@ -986,13 +1003,13 @@ video {
   border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
 }
 
-.hover\:text-\[var\(--green\)\]:hover {
-  color: var(--green);
-}
-
 .hover\:text-green-500:hover {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
 }
 
 .hover\:brightness-75:hover {
@@ -1015,9 +1032,19 @@ video {
     width: 200px;
   }
 
+  .mobile-large\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .mobile-large\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .mobile-large\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -1038,6 +1065,16 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:text-2xl {

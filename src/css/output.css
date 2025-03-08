@@ -594,6 +594,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -662,6 +666,10 @@ video {
   scroll-margin-top: 6rem;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -692,10 +700,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .gap-5 {
@@ -794,20 +798,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -834,11 +830,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -849,10 +840,6 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
-}
-
-.text-\[var\(--green\)\] {
-  color: var(--green);
 }
 
 .text-white {
@@ -1032,19 +1019,19 @@ video {
     width: 200px;
   }
 
-  .mobile-large\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .mobile-large\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .mobile-large\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .mobile-large\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .mobile-large\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1059,6 +1046,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
   .md\:bg-hero-background-medium-horizontal {
     background-image: url('../assets/pictures/computer-hardware-medium-horizontal.jpg');
   }
@@ -1067,29 +1062,29 @@ video {
     padding: 1rem;
   }
 
-  .md\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:gap-4 {
-    gap: 1rem;
   }
 
   .lg\:bg-hero-background-large-horizontal {

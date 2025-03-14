@@ -562,10 +562,6 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .right-\[6px\] {
   right: 6px;
 }
@@ -574,16 +570,17 @@ video {
   top: 0px;
 }
 
-.top-20 {
-  top: 5rem;
-}
-
 .top-\[86px\] {
   top: 86px;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inline-block {
@@ -612,6 +609,10 @@ video {
 
 .h-20 {
   height: 5rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
@@ -648,6 +649,10 @@ video {
 
 .max-w-\[100px\] {
   max-width: 100px;
+}
+
+.max-w-\[1024px\] {
+  max-width: 1024px;
 }
 
 .transform {
@@ -739,6 +744,10 @@ video {
   border-color: transparent;
 }
 
+.border-opacity-80 {
+  --tw-border-opacity: 0.8;
+}
+
 .bg-\[var\(--green\)\] {
   background-color: var(--green);
 }
@@ -746,6 +755,26 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
+}
+
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
+}
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
 }
 
 .bg-hero-background-small-vertical {
@@ -794,16 +823,16 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pt-12 {
+  padding-top: 3rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pt-\[150px\] {
+  padding-top: 150px;
 }
 
 .text-left {
@@ -849,6 +878,14 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-md {
@@ -1067,13 +1104,18 @@ video {
     padding-right: 1.5rem;
   }
 
-  .md\:pt-16 {
-    padding-top: 4rem;
+  .md\:pt-\[200px\] {
+    padding-top: 200px;
   }
 
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-7xl {
@@ -1089,5 +1131,15 @@ video {
 
   .lg\:bg-hero-background-large-horizontal {
     background-image: url('../assets/pictures/computer-hardware-large-horizontal.jpg');
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }

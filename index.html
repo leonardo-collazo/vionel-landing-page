@@ -61,97 +61,103 @@
 
   <body>
     <header
-      class="w-full h-20 fixed top-0 flex flex-row justify-between items-center gap-3 p-3 sm:p-3 md:p-4 bg-white border-gray-200 border-solid border-b-2 shadow-md z-10"
+      class="w-full h-20 fixed top-0 bg-white border-gray-200 border-solid border-b-2 shadow-md z-10"
     >
-      <!-- Header Left Section -->
-      <a
-        href="#"
-        class="flex flex-row justify-between items-center gap-3"
+      <div
+        class="w-full max-w-[1024px] h-full flex flex-row justify-between items-center gap-3 mx-auto p-3 sm:p-3 md:p-4"
       >
-        <!-- Logo -->
-        <img
-          src="./src/assets/pictures/logo.png"
-          alt="logo"
-          class="w-20 mobile-large:w-24"
-        />
-
-        <!-- Company Name -->
-        <h1
-          class="inline-block max-w-[100px] mobile-medium:max-w-none text-lg mobile-large:text-xl md:text-2xl text-left font-semibold"
+        <!-- Header Left Section -->
+        <a
+          href="#"
+          class="flex flex-row justify-between items-center gap-3"
         >
-          Auto Code Solution
-        </h1>
-      </a>
+          <!-- Logo -->
+          <img
+            src="./src/assets/pictures/logo.png"
+            alt="logo"
+            class="w-20 mobile-large:w-24"
+          />
 
-      <!-- Header Right Section -->
-      <div class="flex flex-row justify-between items-center gap-3 md:gap-4">
-        <!-- Tabs -->
-        <div class="hidden lg:flex flex-row justify-center items-center gap-3">
-          <a href="#about">
-            <div
-              class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
-            >
-              <p
-                i18n="about-tab"
-                class="text-lg"
-              >
-                About
-              </p>
-            </div>
-          </a>
+          <!-- Company Name -->
+          <h1
+            class="inline-block max-w-[100px] mobile-medium:max-w-none text-lg mobile-large:text-xl md:text-2xl text-left font-semibold"
+          >
+            Auto Code Solution
+          </h1>
+        </a>
 
-          <a href="#services">
-            <div
-              class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
-            >
-              <p
-                i18n="services-tab"
-                class="text-lg"
-              >
-                Services
-              </p>
-            </div>
-          </a>
-
-          <a href="#contact">
-            <div
-              class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
-            >
-              <p
-                i18n="contact-tab"
-                class="text-lg"
-              >
-                Contact
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <!-- Language Icon -->
-        <img
-          id="language-icon"
-          class="w-8 cursor-pointer animate__animated"
-          src="./src/assets/icons/default-language.svg"
-          alt="language icon"
-        />
-
-        <!-- Burger Icon -->
-        <div
-          id="burger-icon"
-          class="burger-icon__toggle"
-        >
+        <!-- Header Right Section -->
+        <div class="flex flex-row justify-between items-center gap-3 md:gap-4">
+          <!-- Tabs -->
           <div
-            id="burger-icon__bar1"
-            class="burger-icon__bar"
-          ></div>
+            class="hidden lg:flex flex-row justify-center items-center gap-3"
+          >
+            <a href="#about">
+              <div
+                class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
+              >
+                <p
+                  i18n="about-tab"
+                  class="text-lg"
+                >
+                  About
+                </p>
+              </div>
+            </a>
+
+            <a href="#services">
+              <div
+                class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
+              >
+                <p
+                  i18n="services-tab"
+                  class="text-lg"
+                >
+                  Services
+                </p>
+              </div>
+            </a>
+
+            <a href="#contact">
+              <div
+                class="px-3 py-2 border-2 border-solid rounded-xl border-transparent hover:text-green-500 hover:border-green-500 transform duration-200"
+              >
+                <p
+                  i18n="contact-tab"
+                  class="text-lg"
+                >
+                  Contact
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Language Icon -->
+          <img
+            id="language-icon"
+            class="w-8 cursor-pointer animate__animated"
+            src="./src/assets/icons/default-language.svg"
+            alt="language icon"
+          />
+
+          <!-- Burger Icon -->
           <div
-            id="burger-icon__bar2"
-            class="burger-icon__bar"
-          ></div>
-          <div
-            id="burger-icon__bar3"
-            class="burger-icon__bar"
-          ></div>
+            id="burger-icon"
+            class="burger-icon__toggle"
+          >
+            <div
+              id="burger-icon__bar1"
+              class="burger-icon__bar"
+            ></div>
+            <div
+              id="burger-icon__bar2"
+              class="burger-icon__bar"
+            ></div>
+            <div
+              id="burger-icon__bar3"
+              class="burger-icon__bar"
+            ></div>
+          </div>
         </div>
       </div>
 
@@ -204,10 +210,10 @@
         class="h-screen bg-hero-background-small-vertical md:bg-hero-background-medium-horizontal lg:bg-hero-background-large-horizontal bg-cover bg-no-repeat"
       >
         <div
-          class="absolute top-20 flex flex-col gap-5 px-4 md:px-6 pt-14 md:pt-16"
+          class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 md:px-6 pt-[150px] md:pt-[200px]"
         >
           <h1
-            class="text-5xl mobile-large:text-6xl md:text-7xl font-bold text-white"
+            class="text-5xl mobile-large:text-6xl md:text-7xl lg:text-8xl font-bold text-white"
           >
             Car Diagnostic
           </h1>
@@ -225,9 +231,11 @@
       <!-- About Section -->
       <section
         id="about"
-        class="flex flex-col gap-4 px-4 mobile-large:px-6 pt-5 pb-4 scroll-mt-20"
+        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-12 scroll-mt-20"
       >
-        <h1 class="text-4xl font-bold text-white">About</h1>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+          About
+        </h1>
         <pre class="text-lg leading-6 whitespace-pre-wrap text-white">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos incidunt non maiores nulla? Tempore dolorem unde maxime atque sed, aspernatur saepe, nulla, quasi itaque necessitatibus nobis in dolorum.
           
@@ -240,10 +248,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
       <!-- Services Section -->
       <section
         id="services"
-        class="flex flex-col gap-4 px-4 mobile-large:px-6 pb-4 scroll-mt-24"
+        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-6 scroll-mt-24"
       >
         <!-- Header -->
-        <h1 class="text-4xl font-bold text-white">Services</h1>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+          Services
+        </h1>
 
         <!-- Services -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -304,9 +314,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
       <!-- Contact Section -->
       <section
         id="contact"
-        class="flex flex-col gap-5 px-4 mobile-large:px-6 pt-5 pb-4 scroll-mt-20"
+        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-12 scroll-mt-20"
       >
-        <h1 class="text-4xl font-bold text-white">Contact</h1>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+          Contact
+        </h1>
 
         <!-- Adress -->
         <div class="flex flex-row items-center gap-4 rounded-sm">

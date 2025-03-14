@@ -3,9 +3,9 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  gap: 30px;
 }
 .social-media-list__element {
-  margin: 0 10px;
   position: relative;
 }
 .social-media-list__element--whatsapp {

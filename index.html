@@ -213,17 +213,28 @@
           class="w-full max-w-[1024px] flex flex-col gap-6 mx-auto px-4 md:px-6 pt-[150px] md:pt-[200px]"
         >
           <h1
+            i18n="hero-section-header"
             class="text-5xl mobile-large:text-6xl md:text-7xl lg:text-8xl font-bold text-white"
           >
             Car Diagnostic
           </h1>
-          <p class="text-lg mobile-large:text-xl leading-6 text-white">
+          <p
+            i18n="hero-section-info"
+            class="text-lg mobile-large:text-xl leading-6 text-white"
+          >
             After our diagnostic, your problems will be gone
           </p>
           <div
             class="flex justify-center items-center w-36 h-14 rounded-sm bg-[var(--green)] cursor-pointer hover:brightness-75 transition-all duration-300"
           >
-            <a href="#services"><p class="text-xl text-white">Services</p></a>
+            <a href="#services"
+              ><p
+                i18n="hero-section-button"
+                class="text-xl text-white"
+              >
+                Services
+              </p></a
+            >
           </div>
         </div>
       </section>
@@ -231,12 +242,18 @@
       <!-- About Section -->
       <section
         id="about"
-        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-12 scroll-mt-20"
+        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-8 scroll-mt-20"
       >
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+        <h1
+          i18n="about-section-header"
+          class="text-4xl md:text-5xl font-bold text-white"
+        >
           About
         </h1>
-        <pre class="text-lg leading-6 whitespace-pre-wrap text-white">
+        <pre
+          i18n="about-section-info"
+          class="text-lg leading-6 whitespace-pre-wrap text-white"
+        >
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos incidunt non maiores nulla? Tempore dolorem unde maxime atque sed, aspernatur saepe, nulla, quasi itaque necessitatibus nobis in dolorum.
           
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos incidunt non maiores nulla? Tempore dolorem unde maxime atque sed, aspernatur saepe, nulla, quasi itaque necessitatibus nobis in dolorum.
@@ -251,7 +268,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
         class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-6 scroll-mt-24"
       >
         <!-- Header -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+        <h1
+          i18n="service-section-header"
+          class="text-4xl md:text-5xl font-bold text-white"
+        >
           Services
         </h1>
 
@@ -264,9 +284,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 alt="Default icon."
                 class="w-14 h-14 object-contain"
               />
-              <h2 class="text-xl font-bold">Service name</h2>
+              <h2
+                i18n="service1-name"
+                class="text-xl font-bold"
+              >
+                Service name
+              </h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p i18n="service1-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
             <p class="text-lg font-bold">$100</p>
           </div>
 
@@ -277,9 +304,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 alt="Default icon."
                 class="w-14 h-14 object-contain"
               />
-              <h2 class="text-xl font-bold">Service name</h2>
+              <h2
+                i18n="service2-name"
+                class="text-xl font-bold"
+              >
+                Service name
+              </h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p i18n="service2-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
             <p class="text-lg font-bold">$100</p>
           </div>
 
@@ -290,9 +324,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 alt="Default icon."
                 class="w-14 h-14 object-contain"
               />
-              <h2 class="text-xl font-bold">Service name</h2>
+              <h2
+                i18n="service3-name"
+                class="text-xl font-bold"
+              >
+                Service name
+              </h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p i18n="service3-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
             <p class="text-lg font-bold">$100</p>
           </div>
 
@@ -303,9 +344,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 alt="Default icon."
                 class="w-14 h-14 object-contain"
               />
-              <h2 class="text-xl font-bold">Service name</h2>
+              <h2
+                i18n="service4-name"
+                class="text-xl font-bold"
+              >
+                Service name
+              </h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p i18n="service4-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
             <p class="text-lg font-bold">$100</p>
           </div>
         </div>
@@ -314,9 +362,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
       <!-- Contact Section -->
       <section
         id="contact"
-        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-12 scroll-mt-20"
+        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-8 scroll-mt-20"
       >
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+        <h1
+          i18n="contact-section-header"
+          class="text-4xl md:text-5xl font-bold text-white"
+        >
           Contact
         </h1>
 
@@ -328,7 +379,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
             class="w-10 h-10"
           />
           <div>
-            <h2 class="text-lg font-bold text-white">Address</h2>
+            <h2
+              i18n="contact-section-address"
+              class="text-lg font-bold text-white"
+            >
+              Address
+            </h2>
             <a
               class="underline hover:opacity-50 text-white"
               href="http://maps.google.com/?q=921 Westwinds Dr, Davenport, Florida, 33837"
@@ -346,7 +402,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
             class="w-10 h-10"
           />
           <div>
-            <h2 class="text-lg font-bold text-white">Phone</h2>
+            <h2
+              i18n="contact-section-phone"
+              class="text-lg font-bold text-white"
+            >
+              Phone
+            </h2>
             <a
               class="underline hover:opacity-50 text-white"
               href="tel:+17865218523"
@@ -364,7 +425,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
             class="w-10 h-10"
           />
           <div>
-            <h2 class="text-lg font-bold text-white">Email</h2>
+            <h2
+              i18n="contact-section-email"
+              class="text-lg font-bold text-white"
+            >
+              Email
+            </h2>
             <a
               class="underline hover:opacity-50 text-white"
               href="mailto:fvionel@gmail.com"
@@ -495,15 +561,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
         </ul>
 
         <!-- Reference to Icons8 -->
-        <p>
-          Icons by
+        <div class="flex flex-row gap-1">
+          <p i18n="reference-icons8">Icons by</p>
           <a
             class="hover:text-green-500 underline"
             href="https://icons8.com/"
             target="_blank"
-            >Icons8</a
           >
-        </p>
+            Icons8</a
+          >
+        </div>
       </div>
     </footer>
   </body>

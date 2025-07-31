@@ -1,4 +1,5 @@
-import { getLanguage, setLanguage } from "./get-set-language.js";
+import { getLanguage, setLanguage } from "./manage-language.js";
+import { loadLanguageIcon } from "./load-language-icon.js";
 
 function loadLanguage() {
   const currentLanguage = getLanguage();
@@ -6,3 +7,4 @@ function loadLanguage() {
 }
 
 loadLanguage();
+loadLanguageIcon();

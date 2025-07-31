@@ -14,10 +14,8 @@ function zoomOutLanguageIcon() {
 
 function changeLanguageIcon() {
   zoomOutLanguageIcon();
-  setTimeout(loadLanguageIcon, 100);
-  setTimeout(zoomInLanguageIcon, 100);
+  setTimeout(loadLanguageIcon, 250);
+  setTimeout(zoomInLanguageIcon, 250);
 }
 
-languageIcon.addEventListener("click", changeLanguageIcon);
-
-export { languageIcon };
+export { languageIcon, changeLanguageIcon };

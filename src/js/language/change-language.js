@@ -1,6 +1,6 @@
 import { languageKey, languages } from "../constants/constants.js";
-import { getLanguage, setLanguage } from "./get-set-language.js";
-import { languageIcon } from "./change-language-icon.js";
+import { getLanguage, setLanguage } from "./manage-language.js";
+import { languageIcon, changeLanguageIcon } from "./change-language-icon.js";
 
 function changeLanguage() {
   const currentLanguage = getLanguage();
@@ -16,3 +16,5 @@ languageIcon.addEventListener("click", () => {
   const newLanguage = changeLanguage();
   setLanguage(newLanguage);
 });
+
+languageIcon.addEventListener("click", changeLanguageIcon);

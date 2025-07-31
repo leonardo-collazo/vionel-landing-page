@@ -21,6 +21,9 @@ module.exports = {
         "hero-background-small-horizontal":
           "url('../assets/pictures/computer-hardware-small-horizontal.jpg')",
       },
+      boxShadow: {
+        "service-card-shadow": "0 0 14px 10px rgba(255, 255, 255, 0.45)",
+      },
     },
   },
   plugins: [],

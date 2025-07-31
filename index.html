@@ -225,7 +225,7 @@
             After our diagnostic, your problems will be gone
           </p>
           <div
-            class="flex justify-center items-center w-36 h-14 rounded-sm bg-[var(--green)] cursor-pointer hover:brightness-75 transition-all duration-300"
+            class="flex justify-center items-center w-36 h-14 rounded-sm border-solid border-2 border-white bg-[var(--green)] cursor-pointer hover:brightness-75 transition-all duration-300"
           >
             <a href="#services"
               ><p
@@ -242,7 +242,7 @@
       <!-- About Section -->
       <section
         id="about"
-        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-8 scroll-mt-20"
+        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 mt-6 pt-6 scroll-mt-20"
       >
         <h1
           i18n="about-section-header"
@@ -265,7 +265,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
       <!-- Services Section -->
       <section
         id="services"
-        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-6 scroll-mt-24"
+        class="w-full max-w-[1024px] flex flex-col gap-7 mx-auto px-4 mobile-large:px-6 mt-12 scroll-mt-24"
       >
         <!-- Header -->
         <h1
@@ -276,8 +276,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
         </h1>
 
         <!-- Services -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="flex flex-col gap-3 p-3 rounded-sm bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+          <div
+            class="flex flex-col gap-3 p-3 rounded-sm bg-white/90 shadow-service-card-shadow"
+          >
             <div class="w-full flex flex-row items-center gap-3">
               <img
                 src="./src/assets/icons/default-icon.png"
@@ -291,13 +293,23 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 Service name
               </h2>
             </div>
-            <p i18n="service1-details">
+            <p
+              i18n="service1-details"
+              class="flex-grow"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <p class="text-lg font-bold">$100</p>
+            <p
+              i18n="service1-price"
+              class="text-lg font-bold"
+            >
+              $100
+            </p>
           </div>
 
-          <div class="flex flex-col gap-3 p-3 rounded-sm bg-white">
+          <div
+            class="flex flex-col gap-3 p-3 rounded-sm bg-white/90 shadow-service-card-shadow"
+          >
             <div class="w-full flex flex-row items-center gap-3">
               <img
                 src="./src/assets/icons/default-icon.png"
@@ -311,13 +323,23 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 Service name
               </h2>
             </div>
-            <p i18n="service2-details">
+            <p
+              i18n="service2-details"
+              class="flex-grow"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <p class="text-lg font-bold">$100</p>
+            <p
+              i18n="service2-price"
+              class="text-lg font-bold"
+            >
+              $100
+            </p>
           </div>
 
-          <div class="flex flex-col gap-3 p-3 rounded-sm bg-white">
+          <div
+            class="flex flex-col gap-3 p-3 rounded-sm bg-white/90 shadow-service-card-shadow"
+          >
             <div class="w-full flex flex-row items-center gap-3">
               <img
                 src="./src/assets/icons/default-icon.png"
@@ -331,13 +353,23 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 Service name
               </h2>
             </div>
-            <p i18n="service3-details">
+            <p
+              i18n="service3-details"
+              class="flex-grow"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <p class="text-lg font-bold">$100</p>
+            <p
+              i18n="service3-price"
+              class="text-lg font-bold"
+            >
+              $100
+            </p>
           </div>
 
-          <div class="flex flex-col gap-3 p-3 rounded-sm bg-white">
+          <div
+            class="flex flex-col gap-3 p-3 rounded-sm bg-white/90 shadow-service-card-shadow"
+          >
             <div class="w-full flex flex-row items-center gap-3">
               <img
                 src="./src/assets/icons/default-icon.png"
@@ -351,10 +383,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
                 Service name
               </h2>
             </div>
-            <p i18n="service4-details">
+            <p
+              i18n="service4-details"
+              class="flex-grow"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <p class="text-lg font-bold">$100</p>
+            <p
+              i18n="service4-price"
+              class="text-lg font-bold"
+            >
+              $100
+            </p>
           </div>
         </div>
       </section>
@@ -362,7 +402,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis eos 
       <!-- Contact Section -->
       <section
         id="contact"
-        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 pt-8 scroll-mt-20"
+        class="w-full max-w-[1024px] flex flex-col gap-5 mx-auto px-4 mobile-large:px-6 mt-8 pt-4 scroll-mt-20"
       >
         <h1
           i18n="contact-section-header"

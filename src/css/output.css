@@ -583,6 +583,18 @@ video {
   margin-right: auto;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -655,6 +667,10 @@ video {
   max-width: 1024px;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -715,6 +731,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .whitespace-pre-wrap {
   white-space: pre-wrap;
 }
@@ -748,8 +768,9 @@ video {
   border-color: transparent;
 }
 
-.border-opacity-80 {
-  --tw-border-opacity: 0.8;
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[var\(--green\)\] {
@@ -761,24 +782,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
 }
 
-.bg-opacity-25 {
-  --tw-bg-opacity: 0.25;
+.bg-white\/95 {
+  background-color: rgb(255 255 255 / 0.95);
 }
 
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
+.bg-white\/90 {
+  background-color: rgb(255 255 255 / 0.9);
 }
 
 .bg-hero-background-small-vertical {
@@ -827,8 +840,8 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-6 {
@@ -837,26 +850,6 @@ video {
 
 .pt-\[150px\] {
   padding-top: 150px;
-}
-
-.pt-\[130px\] {
-  padding-top: 130px;
-}
-
-.pt-\[110px\] {
-  padding-top: 110px;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-left {
@@ -904,17 +897,15 @@ video {
   text-decoration-line: underline;
 }
 
-.opacity-5 {
-  opacity: 0.05;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-service-card-shadow {
+  --tw-shadow: 0 0 14px 10px rgba(255, 255, 255, 0.45);
+  --tw-shadow-colored: 0 0 14px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -928,10 +919,6 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .duration-300 {
@@ -1155,11 +1142,6 @@ video {
 
   .lg\:bg-hero-background-large-horizontal {
     background-image: url('../assets/pictures/computer-hardware-large-horizontal.jpg');
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .lg\:text-8xl {

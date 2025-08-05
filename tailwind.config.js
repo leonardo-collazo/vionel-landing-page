@@ -20,6 +20,8 @@ module.exports = {
           "url('../assets/pictures/computer-hardware-medium-horizontal.jpg')",
         "hero-background-small-horizontal":
           "url('../assets/pictures/computer-hardware-small-horizontal.jpg')",
+        "advanced-electronic-diagnostics-service":
+          "url('../assets/pictures/advanced-electronic-diagnostics-service.png')",
       },
       boxShadow: {
         "service-card-shadow": "0 0 14px 10px rgba(255, 255, 255, 0.45)",

@@ -53,6 +53,8 @@ const i18n = {
     "service4-details":
       "Diagnosis and repair of A/C systems. R-134a or R-1234yf gas charging, leak detection, compressor inspection, pressure and electronic operation checks. Mobile service with recovery, vacuum and recharge equipment.",
     "service4-price": "From $150",
+    "service-section-footer":
+      "All our services have a starting price as shown. If the job requires it, the price may increase, but not without first letting the customer know.",
 
     "contact-section-header": "Contact",
     "contact-section-address": "Address",
@@ -96,6 +98,8 @@ const i18n = {
     "service4-details":
       "Diagn\u00f3stico y reparaci\u00f3n de sistemas de A/C. Carga de gas R-134a o R-1234yf, detecci\u00f3n de fugas, revisi\u00f3n de compresor, presiones y funcionamiento electr\u00f3nico. Servicio m\u00f3vil con equipos de recuperaci\u00f3n, vac\u00edo y recarga.",
     "service4-price": "Desde $150",
+    "service-section-footer":
+      "Todos nuestros servicios tienen un precio inicial como se muestra. Si el trabajo lo requiere, el precio podr\u00eda aumentar, pero no sin antes dejarle saber al cliente.",
 
     "contact-section-header": "Contacto",
     "contact-section-address": "Direcci\u00f3n",

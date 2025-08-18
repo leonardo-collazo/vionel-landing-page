@@ -28,6 +28,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  /* font-family: "Montserrat", Verdana, Geneva, sans-serif; */
+  font-family: "Oswald", Impact, "Arial Narrow", sans-serif;
+  /* font-family: "Open Sans", Calibri, "Segoe UI", Tahoma, Arial, sans-serif; */
 }
 
 .animate__animated {

@@ -33,10 +33,14 @@ module.exports = {
         "service-card-shadow": "0 0 14px 10px rgba(255, 255, 255, 0.45)",
       },
       fontFamily: {
-        // roboto: ["Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
-        // montserrat: ["Montserrat", "Verdana", "Geneva", "sans-serif"],
-        oswald: ["Oswald", "Impact", "Arial Narrow", "sans-serif"],
-        // open-sans: ["Open Sans", "Calibri", "Segoe UI", "Tahoma", "Arial", "sans-serif"],
+        "open-sans": [
+          "Open Sans",
+          "Calibri",
+          "Segoe UI",
+          "Tahoma",
+          "Arial",
+          "sans-serif",
+        ],
       },
     },
   },

@@ -574,6 +574,22 @@ video {
   top: 86px;
 }
 
+.right-16 {
+  right: 4rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.bottom-36 {
+  bottom: 9rem;
+}
+
+.bottom-40 {
+  bottom: 10rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -630,10 +646,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.min-h-64 {
-  min-height: 16rem;
 }
 
 .min-h-72 {
@@ -1167,5 +1179,15 @@ video {
   .lg\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:right-8 {
+    right: 2rem;
+  }
+
+  .xl\:right-10 {
+    right: 2.5rem;
   }
 }
